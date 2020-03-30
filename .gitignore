@@ -2,3 +2,5 @@ lib*
 pyvenv.cfg
 __venv__
 bin
+.idea
+__pycache__
