@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39bf66aa-22a4-442b-a34f-ce880e40a673" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +63,8 @@
       <option name="presentableId" value="Default" />
       <updated>1585430740168</updated>
       <workItem from="1585430742827" duration="8804000" />
-      <workItem from="1585498103543" duration="26665000" />
+      <workItem from="1585498103543" duration="27005000" />
+      <workItem from="1585549496217" duration="222000" />
     </task>
     <servers />
   </component>
@@ -74,10 +76,10 @@
       <screen x="0" y="0" width="1600" height="855" />
     </state>
     <state x="361" y="84" key="SettingsEditor/0.0.1600.855@0.0.1600.855" timestamp="1585544394849" />
-    <state x="462" y="253" key="com.intellij.ide.util.TipDialog" timestamp="1585498352181">
+    <state x="462" y="253" key="com.intellij.ide.util.TipDialog" timestamp="1585549554794">
       <screen x="0" y="0" width="1600" height="855" />
     </state>
-    <state x="462" y="253" key="com.intellij.ide.util.TipDialog/0.0.1600.855@0.0.1600.855" timestamp="1585498352181" />
+    <state x="462" y="253" key="com.intellij.ide.util.TipDialog/0.0.1600.855@0.0.1600.855" timestamp="1585549554794" />
     <state x="589" y="95" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1585526763740">
       <screen x="0" y="0" width="1600" height="855" />
     </state>

@@ -1,14 +1,10 @@
-from PyQt5.QtCore import QDateTime, Qt, QTimer
-from PyQt5.QtWidgets import (QApplication, QCheckBox, QComboBox, QDateTimeEdit,
-        QDial, QDialog, QGridLayout, QGroupBox, QHBoxLayout, QLabel, QLineEdit,
-        QProgressBar, QPushButton, QRadioButton, QScrollBar, QSizePolicy,
-        QSlider, QSpinBox, QStyleFactory, QTableWidget, QTabWidget, QTextEdit,
-        QVBoxLayout, QWidget)
+from PyQt5.QtWidgets import (QApplication, QDialog, QHBoxLayout, QLabel,
+                             QPushButton, QTextEdit, QVBoxLayout)
 from algorithm import GraphPath
 import numpy as np
 
-class WidgetGallery(QDialog):
 
+class WidgetGallery(QDialog):
     err_msg = '''Вы ввели некоректные данные,введите что то похожее на это:
                 0 4 9 2 0 0 6 0 0 0
                 4 0 0 0 0 0 2 5 0 0
@@ -25,6 +21,7 @@ class WidgetGallery(QDialog):
         super(WidgetGallery, self).__init__(parent)
         self.resize(700, 300)
         self.setLayout(self.layouts())
+
     def layouts(self):
         mainLayout = QHBoxLayout()
 
@@ -82,8 +79,8 @@ class WidgetGallery(QDialog):
         except BaseException:
             self.output.setText(self.err_msg)
 
-if __name__ == '__main__':
 
+if __name__ == '__main__':
     import sys
 
     app = QApplication(sys.argv)
