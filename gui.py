@@ -52,8 +52,10 @@ class WidgetGallery(QDialog):
         try:
             gr = GraphPath()
             gr.split_str(self.input.toPlainText())
-            power, _ = gr.find_max_power(1, 10)
-            self.output.setText("Максимальный поток : {0}".format(power))
+            power, graph = gr.find_max_power(1, 10)
+            graph = graph - gr.graph
+            self.output.setText("Максимальный поток : {0}\nМатрица потока\n{1}"
+                                .format(power, graph))
         except BaseException:
             self.output.setText(self.err_msg)
 
@@ -63,7 +65,9 @@ class WidgetGallery(QDialog):
             gr = GraphPath()
             gr.split_str(self.input.toPlainText())
             power, graph = gr.find_max_power(1, 10)
-            list_of_text.append("Максимальный поток : {0}".format(power))
+            potok = graph - gr.graph
+            list_of_text.append("Максимальный поток : {0}\nМатрица потока\n{1}"
+                                .format(power, potok))
             check_point_one = gr.check_point_one(power, graph)
             list_of_text.append(
                 "Чекпоинт 1 : {0}".format("✔" if check_point_one else "❌❌🞪❌"))
