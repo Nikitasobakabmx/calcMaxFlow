@@ -45,12 +45,12 @@ class GraphPath:
             more_then_zero = graph < 0
             positive_graph = graph.copy()
             positive_graph[more_then_zero] = 0
-            # print(graph)
-            # print("Path : {0}, power : {1}, costs {2}, graph : {3}"
-            #       .format(path,
-            #               power[-1],
-            #               costs,
-            #               graph))
+            print(graph)
+            print("Path : {0}, power : {1}, costs {2}, graph : {3}"
+                  .format(path,
+                          power[-1],
+                          costs,
+                          graph))
             path = self._get_path(positive_graph, [begin - 1, ], end)
         return sum(power), graph
 
