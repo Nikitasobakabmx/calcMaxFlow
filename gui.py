@@ -52,7 +52,7 @@ class WidgetGallery(QDialog):
         try:
             gr = GraphPath()
             gr.split_str(self.input.toPlainText())
-            power, graph = gr.find_max_power(1, 10)
+            power, graph = gr.find_max_power(1, 11)
             graph = graph - gr.graph
             self.output.setText("Максимальный поток : {0}\nМатрица потока\n{1}"
                                 .format(power, graph))
@@ -63,8 +63,14 @@ class WidgetGallery(QDialog):
         try:
             list_of_text = list()
             gr = GraphPath()
-            gr.split_str(self.input.toPlainText())
-            power, graph = gr.find_max_power(1, 10)
+            text = self.input.toPlainText()
+            splited = self.input.toPlainText().split("\n")
+            while not splited[-1]:
+                splited = splited[0:-1]
+            text = "\n".join(splited)
+            print(text)
+            gr.split_str(text)
+            power, graph = gr.find_max_power(1, len(splited))
             potok = graph - gr.graph
             list_of_text.append("Максимальный поток : {0}\nМатрица потока\n{1}"
                                 .format(power, potok))

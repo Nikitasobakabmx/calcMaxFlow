@@ -9,7 +9,7 @@ def main():
     print(gr.graph)
     result = np.array(gr._get_path(gr.graph, [0, ], 6))
     print(result)
-    power, graph = gr.find_max_power(1, 10)
+    power, graph = gr.find_max_power(1, size)
     print("power : ", power)
     print("graph : ", graph)
     check_point_one = gr.check_point_one(power, graph)
